@@ -1,0 +1,25 @@
+# Byte-compiled / cached
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Environment
+.env
+.venv
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Large data files and results
+evaluation/benchmarks/mmlu/data/
+unified_top_n_overlap_results_ffn/
+*.csv
+# Large JSON result files (keep small configs)
+*overlap_neurons_*.json

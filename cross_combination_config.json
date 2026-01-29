@@ -1,0 +1,45 @@
+{
+  "processing_mode": "cross_combination",
+  "base_output_dir": "",
+  "device": "cuda:0",
+  "unified_params": {
+    "max_new_tokens": 500,
+    "temperature": 0,
+    "top_k": 20,
+    "top_p": 1
+  },
+  "models": [
+    
+    {
+      "model_name": "Llama-3.1-8B-Instruct",
+      "model_path": ""
+    }
+  ],
+  "prompts": [
+
+    {
+      "name": "MMLU",
+      "prompt": "Q: Aesthetics deals with objects that are_____.\nA. essential to our existence\nB. unimportant to most people\nC. not essential to our existence\nD. rarely viewed\nAnswer: Please think briefly if needed, then output strictly in this single line format: The final answer is [X]",
+      "max_new_tokens": 16000
+    },
+    {
+      "name": "MATH500",
+      "prompt": "Solve the following math problem by reasoning step by step and put your final answer within \\boxed{}.\nThis is the problem:\nConvert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$\n",
+      "max_new_tokens": 16000
+    },
+    {
+      "name": "EvalPlus",
+      "prompt": "Write a function to find the sum of numbers in a list within a range specified by two indices.",
+      "max_new_tokens": 16000
+    },
+    {
+      "name":"MGSM",
+      "prompt":"Question: There are nine computers in the server room. From Monday to Thursday, five more computers were installed each day. How many computers are in the server room now?",
+      "max_new_tokens":16000
+    }
+    
+
+  ]
+}
+
+
