@@ -1,4 +1,4 @@
-## Workflow
+## Workflow for “Tiny Brains, Giant Impact: Uncovering the Keystone Neurons of LLM with Just a Few Prompts”
 
 ### Step 1: Record Neuron Activations
 Run models with prompts and record neuron activations.
